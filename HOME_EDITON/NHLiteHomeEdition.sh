@@ -387,7 +387,7 @@ fix_uid
 printf "\n${blue}[*] Instalando e configurando VNC Server ... ${reset}\n "
 nh -r sudo apt update -y
 nh -r sudo apt install tightvncserver -y
-nh -r curl -LO https://raw.githubusercontent.com/Helexiel/NH-Lite-HOME-EDITION/master/xstartup
+nh -r curl -LO https://raw.githubusercontent.com/NuddleRat/NHLite/master/HOME_EDITON/xstartup
 nh -r cp xstartup /home/kali/.vnc/
 nh -r mv xstartup /root/.vnc/
 nh -r chmod +x /home/kali/.vnc/xstartup
