@@ -49,11 +49,11 @@ bash NHLiteProgrammerEdition.sh
 
 # Créditos
 
-Nuddle
+## Nuddle
 https://www.youtube.com/channel/UCpwKc__VC8FxpltaLirnC3g
 
-Speatec System
+## Speatec System
 https://equipe-speatec-ofc.blogspot.com
 
-Offensive Security
+## Offensive Security
 https://www.offensive-security.com/
