@@ -12,9 +12,9 @@ O NH Lite é um projeto cujo o idealizador é o Nuddle, e junto com o grupo Spea
 O NH Lite é quase completamente traduzido, apenas alguns pacotes estão em inglês.
 
 # NH Lite PROGRAMMER EDITION
-O NH Lite PROGRAMMER EDITION é uma edição exclusiva para programadores e desenvolvedores, tudo isso acompanhando à Interface Gráfica XFCE4.
+O NH Lite PROGRAMMER EDITION é uma edição exclusiva para programadores e desenvolvedores.
 
-Essa Edição do projeto acompanha com sigo varias IDE's e Editores de Texto.
+Essa Edição do projeto acompanha com sigo varias IDE's e Editores de Texto, tudo isso acompanhando à Interface Gráfica XFCE4.
 
 # NH Lite HOME EDITION
 O NH Lite HOME EDITION é uma versão para uso do diario.
