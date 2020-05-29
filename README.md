@@ -17,7 +17,7 @@ O NH Lite PROGRAMMER EDITION é uma edição exclusiva para programadores e dese
 Essa Edição do projeto acompanha com sigo varias IDE's e Editores de Texto.
 
 # NH Lite HOME EDITION
-O NH Lite HOME EDITION é uma versão para uso do dia à dia.
+O NH Lite HOME EDITION é uma versão para uso do diario.
 
 Essa Edição do projeto acompanha consigo programas Office, Editores de texto, Editores de Vídeos, Editores de Fotos, Gravador de Tela e Pragramas para Ilustração, acompanhada da Interface Gráfica XFCE4.
 
