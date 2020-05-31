@@ -7,8 +7,7 @@ USERNAME=kali
 function unsupported_arch() {
     printf "${red}"
     echo "[*] Unsupported Architecture\n\n"
-    printf "${reset}"
-    exit
+    printf "${reset}"                                                                                    exit
 }
 
 function ask() {
@@ -94,7 +93,7 @@ function check_dependencies() {
     printf "${blue}\n[*] Verificando dependências do pacote...${reset}\n"
     apt update -y &> /dev/null
 
-    for i in proot espeak tar axel; do
+    for i in proot figlet tar axel; do
         if [ -e $PREFIX/bin/$i ]; then
             echo "  $i está OK"
         else
@@ -341,15 +340,15 @@ function print_banner() {
     printf "${blue}##  88P   Y8b      d8''''''''8b   88        88  ##\n"
     printf "${blue}##  88     '88.   d8'        '8b  88        88  ##\n"
     printf "${blue}##  88       Y8b d8'          '8b 888888888 88  ##\n"
-    printf "${blue}##    HOME EDITION                              ##\n"
+    printf "${blue}##                                              ##\n"
     printf "${blue}####  ############# NH HOME EDITION ##############${reset}\n\n"
 }
 
 
 ##################################
-##              CORES           ##
+##              Main            ##
 
-# CORES
+# Add some colours
 red='\033[1;31m'
 green='\033[1;32m'
 yellow='\033[1;33m'
@@ -378,46 +377,36 @@ extract_rootfs
 create_launcher
 cleanup
 
-printf "\n${blue}[*] Configurando NH Lite HOME EDITION ...\n"
+printf "\n${blue}[*] Configurando NH HOME EDITION ...\n"
 fix_profile_bash
 fix_sudo
 create_kex_launcher
 fix_uid
-
-printf "\n${blue}[*] Instalando e configurando VNC Server ... ${reset}\n "
 nh -r sudo apt update -y
 nh -r sudo apt install tightvncserver -y
+nh -r sudo apt install kali-desktop-xfce kali-defaults kali-root-login desktop-base xfce4 xfce4-places-plugin xfce4-goodies -y
+nh -r sudo apt install calligra gimp inkscape pitivi -y
+nh -r sudo apt install vokoscreen-ng -y
 nh -r curl -LO https://raw.githubusercontent.com/NuddleRat/NHLite/master/xstartup
 nh -r cp xstartup /home/kali/.vnc/
 nh -r mv xstartup /root/.vnc/
 nh -r chmod +x /home/kali/.vnc/xstartup
 nh -r chmod +x /root/.vnc/xstartup
 
-printf "\n${red}[*] Removendo recursos desnecessários do NH Lite HOME EDITION ...${reset}\n "
+printf "\n${red}[*] Removendo pacotes desnecessários do NH HOME EDITION ...${reset}\n "
 nh -r sudo apt remove --purge metasploit-framework -y
-nh -r sudo apt autoremove -y 
+nh -r sudo apt autoremove -y
 nh -r sudo apt autoclean -y
 
-printf "\n${blue}[*] Instalando recursos necessários para o NetHunter Lite ...${reset}\n"
-nh -r sudo apt install vokoscreen-ng -y
-
-printf "\n${blue}[*] Instalando interface gráfica XFCE4 ...${reset}\n"
-nh -r sudo apt install kali-desktop-xfce kali-defaults kali-root-login desktop-base xfce4 xfce4-places-plugin xfce4-goodies -y
-
-printf "n${blue}[*] Instalando recursos para o NH HOME EDITION ...${reset}\n"
-nh -r sudo apt install calligra gimp inkscape pitivi -y
-
-espeak -v m1+pt_br "bem-vindo ao NetHunter Lite HOME EDITION"
 print_banner
-printf "${green}[=] NH Lite HOME EDITION v1.0 instalado com sucesso${reset}\n\n"
-printf "${green}[+] Para iniciar o NH Lite HOME EDITION v1.0, digite:${reset}\n"
-printf "${green}[+] nethunter             # Para iniciar o NH Lite HOME EDITION cli${reset}\n"
-printf "${green}[+] nethunter vncpasswd  # Para definir a senha do VNC${reset}\n"
-printf "${green}[+] nethunter vncserver       # Para iniciar o NH Lite HOME EDITION gui${reset}\n"
-printf "${green}[+] nethunter vncserver -kill :1    # Para parar o NH Lite HOME EDITION gui${reset}\n"
-printf "${green}[+] nethunter -r          # Para executar o NH Lite HOME EDITION como root${reset}\n"
-printf "${green}[+] nh                    # Atalho para o NH Lite HOME EDITION${reset}\n\n"
-printf "${light_cyan}[!] NH HOME EDITION É UMA EDIÇÃO DO NH LITE v1.0, QUE ACOMPANHA A INTEFACE GRAFICA XFCE4 E PROGRAMAS PARA EDIÇÃO DE FOTOS E VÍDEOS, EDITORES DE TEXTO E GRAVADOR DE TELA, TUDO ISSO EM PORTUGUÊS.${reset}\n"
+printf "${green}[=] NetHunter para Termux instalado com sucesso${reset}\n\n"
+printf "${green}[+] Para iniciar o NH Lite v1.0, digite:${reset}\n"
+printf "${green}[+] nethunter                     # Para iniciar o NH Lite cli${reset}\n"
+printf "${green}[+] nethunter vncpasswd           # Para definir a senha do VNC${reset}\n"
+printf "${green}[+] nethunter vncserver           # Para iniciar o NH Lite gui${reset}\n"
+printf "${green}[+] nethunter vncserver -kill :1  # Para parar o NH Lite gui${reset}\n"
+printf "${green}[+] nethunter -r                  # Para executar o NH Lite como root${reset}\n"
+printf "${green}[+] nh                            # Atalho para o NH Lite${reset}\n\n"
 printf "${red}[!] Traduzido por Nuddle && Speatec System${reset}\n"
 printf "${red}[!] Script original de Offensive Security${reset}\n"
 echo ""
