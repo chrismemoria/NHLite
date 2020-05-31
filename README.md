@@ -55,7 +55,7 @@ bash NHLite.sh
 
 ## NH Lite PROGRAMMER EDITION
 
-curl -LO 
+curl -LO https://raw.githubusercontent.com/NuddleRat/NHPROGRAMMER/master/NHLite.sh
 
 chmod +x NHLite.sh
 
