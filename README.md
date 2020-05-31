@@ -47,7 +47,7 @@ bash NHLite.sh
 
 ## NH Lite HOME EDITION
 
-curl -LO https://raw.githubusercontent.com/NuddleRat/NHLite/master/HOME_EDITON/NHLiteHomeEdition.sh
+curl -LO https://raw.githubusercontent.com/NuddleRat/NHLite/master/NHLiteHomeEdition.sh
 
 chmod +x NHLiteHomeEdition.sh
 
@@ -55,7 +55,7 @@ bash NHLiteHomeEdition.sh
 
 ## NH Lite PROGRAMMER EDITION
 
-curl -LO https://raw.githubusercontent.com/NuddleRat/NHLite/master/PROGRAMMER-EDITION/NHLiteProgrammerEdition.sh
+curl -LO https://raw.githubusercontent.com/NuddleRat/NHLite/master/NHLiteProgrammerEdition.sh
 
 chmod +x NHLiteProgrammerEdition.sh
 
