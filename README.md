@@ -38,21 +38,18 @@ Essa Edição do projeto acompanha consigo programas Office, Editores de texto, 
 # Instalação
 
 ## NH Lite
-===============================
 
       $ curl -LO https://raw.githubusercontent.com/NuddleRat/NHLite/master/NHLite.sh
       $ chmod +x NHLite.sh
       $ bash NHLite.sh
 
 ## NH Lite HOME EDITION
-===============================
 
       $ curl -LO https://raw.githubusercontent.com/NuddleRat/NHHOME/master/NHLite.sh
       $ chmod +x NHLite.sh
       $ bash NHLite.sh
 
 ## NH Lite PROGRAMMER EDITION
-===============================
 
       $ curl -LO https://raw.githubusercontent.com/NuddleRat/NHPROGRAMMER/master/NHLite.sh
       $ chmod +x NHLite.sh
