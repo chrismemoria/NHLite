@@ -59,6 +59,8 @@ Essa Edição do projeto acompanha consigo programas Office, Editores de texto, 
 
 ## Nuddle
 https://www.youtube.com/channel/UCpwKc__VC8FxpltaLirnC3g
+https://t.me/LearnTheSecret
+https://t.me/nuddledev
 
 ## Speatec System
 https://equipe-speatec-ofc.blogspot.com
