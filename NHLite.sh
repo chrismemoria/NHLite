@@ -384,12 +384,7 @@ fix_sudo
 create_kex_launcher
 fix_uid
 nh -r sudo apt update -y
-nh -r sudo apt install tightvncserver -y
-
-printf "\n${red}[*] Removendo pacotes desnecessários do NH Lite ...${reset}\n "
-nh -r sudo apt remove --purge metasploit-framework -y 
-nh -r sudo apt autoremove -y 
-nh -r sudo apt autoclean -y 
+nh -r sudo apt install tigervnc-standalone-server -y
 
 print_banner
 printf "${green}[=] NetHunter para Termux instalado com sucesso${reset}\n\n"
